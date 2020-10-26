@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Notice the HTML syntax here. Although this may look like regular HTML, it's actually not. 
+ReactDOM.render(<h1>Hello!</h1>, document.getElementById("root"));
+// **Here is what the Babel translation looks like**
+ReactDOM.render(React.createElement("h1", null, "Hello World"), document.getElementById("root"));
+</script>
+</body>
+</html>

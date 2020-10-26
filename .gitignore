@@ -1,0 +1,8 @@
+*.doc
+.vscode
+env/
+venv/
+pycache/
+.vscode/
+db.sqlite3
+.txt
