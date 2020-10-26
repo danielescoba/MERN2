@@ -1,20 +1,20 @@
 
 //1
-console.log(hello);                                   
-var hello = 'world';  
+console.log(hello);     
+var hello = 'world';       
+
 
 //A-world
 //CA-undefined
 
 2
 var needle = 'haystack';
-
 test();
 function test(){
-    var needle = 'magnet';
+     needle = 'magnet';
     console.log(needle);
 }
-//A-magent
+//A-magnet
 // //3
 var brendan = 'super cool';
 function print(){
@@ -23,7 +23,7 @@ function print(){
 }
 console.log(brendan);
 //A-undefined
-// CA-spuer cool
+// CA-super cool
 
 //4
 var food = 'chicken';
