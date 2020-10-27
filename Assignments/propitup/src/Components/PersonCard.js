@@ -6,8 +6,8 @@ export default class PersonCard extends Component {
         return (
             <div>
                 <h2>{firstName}, {lastName}</h2>
-        <p>Age: {age}</p><br></br>
-        <p>Hair Color: {hairColor}</p>
+                <p>Age: {age}</p><br></br>
+                <p>Hair Color: {hairColor}</p>
             </div>
         )
     }

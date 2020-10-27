@@ -6,3 +6,4 @@ pycache/
 .vscode/
 db.sqlite3
 .txt
+/node_modules
