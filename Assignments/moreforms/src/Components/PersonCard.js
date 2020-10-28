@@ -30,37 +30,49 @@ const [ConfirmPassword, setConfirmPassword] = useState("");   
             <div>
                 <label>First Name: </label> 
                 <input type="text" onChange={ (e) => setFirstName(e.target.value) } state={ (e) => setFirstName(e.target.value) } value={ FirstName }  />
-                    {
+                    
+                        {FirstName.length > 0 ?
+                        
                         FirstName.length < 2 ?
                         <p style={{color:'red'}}> First Name must be at least 2 characters</p> :
                         ''
-                    }
+                                :
+                                ''
+                        }
+
+                    
             </div>
             <div>
                 <label>Last Name: </label> 
                 <input type="text" onChange={ (e) => setLastName(e.target.value) } validations={["required", "min:4" ]} state={ (e) => setLastName(e.target.value) } value={ LastName } />
-                {
+                {LastName.length > 0 ?
                         LastName.length < 2 ?
                         <p style={{color:'red'}}> Last Name must be at least 2 characters</p> :
                         ''
+                        :
+                        ''
                     }
             </div>
             <div>
                 <label>Email Address: </label> 
                 <input type="text" onChange={ (e) => setEmail(e.target.value) } state={ (e) => setEmail(e.target.value) } value={ email }/>
-                                {
+                                {email.length >0 ?
                         email.length < 2 ?
                         <p style={{color:'red'}}> email must be at least 2 characters</p> :
                         ''
+                        :
+                        ''
                     }
             </div>
             <div>
                 <label>Password: </label>
                 <input type="text" onChange={ (e) => setPassword(e.target.value) } state={ (e) => setPassword(e.target.value) } value={ password } />
-                                {
+                                {password.length >0 ?
                         password.length < 8 ?
                         <p style={{color:'red'}}> Password needs 8 characters</p> :
                         ''
+                        :
+                        ''
                     }
                     {
                         password != ConfirmPassword ?
