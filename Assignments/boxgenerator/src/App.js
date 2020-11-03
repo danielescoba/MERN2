@@ -1,14 +1,11 @@
 import './App.css';
-import PersonCard from './Components/PersonCard'
+import Box from './Components/Box'
 function App() {
   return (
-    
     <div>
-      <PersonCard/>
+      <Box/>
     </div>
   );
 }
 
 export default App;
-
-
